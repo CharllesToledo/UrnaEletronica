@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna Eletrônica</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSlider.css">
 </head>
 <body>
-    <div class="candidatos">
-        <ul class="vereadores">
-            <h3>Vereadores:</h3>
-            <li>Gatão do telhado: 38111</li>
-            <li>Gatinho da paz: 77222</li>
-        </ul>
-        <ul class="prefeitos">
-            <h3>Prefeitos:</h3>
-            <li>Thor e Jessie: 99</li>
-            <li>Apolo e Mini Apolo: 84</li>
+    <div class="slider">
+        <div class="slider--controls">
+            <div class="slider--control" onclick="goPrev()">&#10094</div>
+            <div class="slider--control" onclick="goNext()">&#10095</div>
+        </div>
+        <div class="slider--width">
+            <div class="slider--item" style="background-image: url('img/38111.jpg');">
+                <h2>Vote 38111</h2>
+                <p>Gatão do telhado<br/>Partido MIAU</p>
+            </div>
+            <div class="slider--item" style="background-image: url('img/77222.jpg');">
+                <h2>Vote 77222</h2>
+                <p>Gatinho da paz<br/>Partido SONECA</p>
+            </div>
+            <div class="slider--item" style="background-image: url('img/99.jpg');">
+                <h2>Vote 99</h2>
+                <p>Prefeita Jessie, vice Thor<br/>Partido VETeranos</p> 
+            </div>
+            <div class="slider--item" style="background-image: url('img/84.jpg');">
+                <h2>Vote 84</h2>
+                <p>Prefeito Apolo, vice Corote<br/>Partido Gardenal</p>
+            </div>
+        </div>
     </div>
     <div class="urna">
         <div class="tela">
@@ -90,5 +104,6 @@
     </div>
     <script src="etapas.js"></script>
     <script src="script.js"></script>
+    <script src="scriptSlider.js"></script>
 </body>
 </html>
